@@ -342,26 +342,56 @@
 
   <section id="form" class="form">
     <div class="container">
-      <form action="#" class="footer__form">
-        <input class="footer__form-input" type="email" placeholder="Email">
-        <div class="dropdown">
-          <div class="select">
-            <span>Choose Language</span>
-            <img src="images/arrow.svg" alt="">
-          </div>
-          <input type="hidden" name="gender">
-          <ul class="dropdown-menu">
-            <li id="English"><img src="images/eng.svg" alt=""> English</li>
-            <li id="ไทย"><img src="images/thai.svg" alt=""> ไทย</li>
-            <li id="中文"><img src="images/china.svg" alt=""> 中文</li>
-            <li id="Indonesia"><img src="images/turk.svg" alt=""> Indonesia</li>
-            <li id="Türk"><img src="images/ind.svg" alt=""> Türk</li>
-          </ul>
+      <div class="form__tabs">
+        <div id="join" class="tabs-btn active">Join now</div><div id="login" class="tabs-btn">Log in</div>
+
+        <div id="join-content" class="form__content">
+          <form action="#" class="footer__form">
+            <input class="footer__form-input" type="email" placeholder="Email">
+            <div class="password-input">
+              <input class="footer__form-input" type="password" placeholder="Password">
+              <span class="toggle-password"></span>
+            </div>
+            <div class="password-input">
+              <input class="footer__form-input" type="password" placeholder="Confirm password">
+              <span class="toggle-password"></span>
+            </div>
+            <div class="dropdown">
+              <div class="select">
+                <span>Choose Language</span>
+                <img src="images/arrow.svg" alt="">
+              </div>
+              <input type="hidden" name="gender">
+              <ul class="dropdown-menu">
+                <li id="English"><img src="images/eng.svg" alt=""> English</li>
+                <li id="ไทย"><img src="images/thai.svg" alt=""> ไทย</li>
+                <li id="中文"><img src="images/china.svg" alt=""> 中文</li>
+                <li id="Indonesia"><img src="images/turk.svg" alt=""> Indonesia</li>
+                <li id="Türk"><img src="images/ind.svg" alt=""> Türk</li>
+              </ul>
+            </div>
+            <div class="form__button">
+              <a href="mailto:affiliate@8xtrade.com" class="form-button">Join now</a>
+            </div>
+          </form>
         </div>
-        <div class="form__button">
-          <a href="mailto:affiliate@8xtrade.com" class="form-button">Join now</a>
+        <div id="login-content" class="form__content">
+          <form action="#" class="footer__form">
+            <input class="footer__form-input" type="email" placeholder="Email">
+            <div class="password-input">
+              <input class="footer__form-input" type="password" placeholder="Password">
+              <span class="toggle-password"></span>
+            </div>
+            
+            <div class="form__button">
+              <a href="mailto:affiliate@8xtrade.com" class="form-button">Log in</a>
+            </div>
+
+            <a href="#" class="form__forgot open-modal" data-modal="#modal1">Forgot password?</a>
+          </form>
         </div>
-      </form>         
+
+      </div>        
     </div>
   </section>
 
@@ -378,7 +408,16 @@
     </div>
   </footer>
 
-
+  <div class='modal' id='modal1'>
+    <a class='close-modal' data-modal="#modal1" href="#">x</a>
+    <div class='content'>
+      <form action="#" class="footer__form">
+        <input class="footer__form-input" type="email" placeholder="Email">
+        <div class="form__button">
+          <a href="mailto:affiliate@8xtrade.com" class="form-button">Restore password</a>
+      </form>
+    </div>  
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="js/main.js"></script>
